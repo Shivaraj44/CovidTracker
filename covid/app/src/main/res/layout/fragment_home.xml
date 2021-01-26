@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavigationFragment.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:id="@+id/first_relative"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/usa_background">
+
+                <ImageView
+                    android:id="@+id/main_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/ic_mainmenu" />
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_baseline_notification" />
+                <TextView
+                    android:id="@+id/usa_textview"
+                    android:layout_width="100sp"
+                    android:text="USA"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="60dp"
+
+                    android:layout_height="30dp"
+                    android:background="@drawable/semicircle_usa"
+                    />
+                <TextView
+                    android:id="@+id/covid_19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_menu"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Covid - 19"
+                    android:textColor="#FFFF"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/feeling_sick"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/covid_19"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Are you feeling sick?"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feeling_sick"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+
+                    android:text="If you feel sick with any of covid-19 symptoms \n please call or SMS us immediately for help."
+                    android:textColor="@color/white"
+
+                    android:textSize="14dp" />
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/call_back"
+
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="30dp"
+                        android:text="Call Now"
+                        android:textColor="#FFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_baseline_call_24" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/message"
+
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Send SMS"
+                        android:textColor="#FFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_message_img" />
+
+                </RelativeLayout>
+
+<!--                <com.hbb20.CountryCodePicker-->
+<!--                    android:id="@+id/et1"-->
+<!--                    android:layout_width="100sp"-->
+<!--                    android:layout_height="41dp"-->
+<!--                    android:layout_below="@id/notification"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:background="@drawable/semicircle_usa"-->
+<!--                    app:ccp_textSize="14sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginEnd="-16dp"-->
+<!--                    android:layout_marginBottom="7dp"-->
+<!--                    android:text="@string/hello_blank_fragment" />-->
+
+                <!--        <RelativeLayout-->
+                <!--            android:layout_width="120dp"-->
+                <!--            android:layout_height="50dp"-->
+                <!--            android:layout_alignParentEnd="true"-->
+                <!--            android:layout_marginTop="100dp"-->
+                <!--            android:layout_marginEnd="30dp"-->
+                <!--            android:background="@drawable/semicircle_usa">-->
+
+                <!--            <ImageView-->
+                <!--                android:id="@+id/usa_imageid"-->
+                <!--                android:layout_width="25dp"-->
+                <!--                android:layout_height="25dp"-->
+                <!--                android:layout_marginStart="10dp"-->
+                <!--                android:layout_marginTop="15dp"-->
+                <!--                android:src="@drawable/imgusa" />-->
+
+                <!--            <TextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginStart="20dp"-->
+                <!--                android:layout_marginTop="15dp"-->
+                <!--                android:layout_toRightOf="@id/usa_imageid"-->
+                <!--                android:text="USA"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:textSize="15dp" />-->
+
+                <!--        </RelativeLayout>-->
+
+
+            </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:id="@+id/recycler_state"
+
+                    android:layout_gravity="bottom"
+                    />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/prevcentation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Prevention"
+                    android:textColor="#0D1333"
+                    android:textSize="20dp"
+
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/twpmen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prevcentation"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/twoman" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/twpmen"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Avoid close \n     contact"
+                    android:textColor="@color/odd_colid_blue"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/handwash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prevcentation"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/twpmen"
+                    android:src="@drawable/handwash" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/handwash"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/twpmen"
+                    android:text="Clean your \n   hands often"
+                    android:textColor="@color/odd_colid_blue"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/mask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prevcentation"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/handwash"
+                    android:src="@drawable/mask" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mask"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/handwash"
+                    android:text="   Wear a \n facemask"
+                    android:textColor="@color/odd_colid_blue"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/girlgirl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/twpmen"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/girl" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- TODO: Update blank fragment layout -->
+
+</FrameLayout>
