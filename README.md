@@ -25,3 +25,6 @@ Project is created with:
 
 * Install the (.apk) file in your moblie device.
 * If It is not installing check with hardware requirements and check if Install from Unknown Resources is enabled
+
+## ScreenShot
+<img src=mobile%20ss/s1.jpg height="500px"/>  <img src=mobile%20ss/s2.jpg height="500px"/>  <img src=mobile%20ss/s3.jpg height="500px"/>   <img src=mobile%20ss/s4.jpg height="500px"/>  <img src=mobile%20ss/s5.jpg height="500px"/>  
